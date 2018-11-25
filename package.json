@@ -1,0 +1,25 @@
+{
+  "name": "pruebaentrevista",
+  "version": "1.0.0",
+  "description": "prueba api",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NatalyVerdugoNogue/PruebaAPI.git"
+  },
+  "author": "NVN",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NatalyVerdugoNogue/PruebaAPI/issues"
+  },
+  "homepage": "https://github.com/NatalyVerdugoNogue/PruebaAPI#readme",
+  "dependencies": {
+    "axios": "0.18.0",
+    "body-parser": "1.18.3",
+    "dotenv": "6.1.0",
+    "express": "4.16.4"
+  }
+}
