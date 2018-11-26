@@ -1,12 +1,18 @@
 const axios = require('axios')
 const sbif = (yyyy, mm, dd, apiKey) => {
   return axios.get(`https://api.sbif.cl/api-sbifv3/recursos_api/dolar/${yyyy}/${mm}/dias/${dd}?apikey=${apiKey}&formato=json`)
-    .then(function (response) {
+    .then((response) => {
+      console.log('sbif:', response.data);
       return response.data;
-      // console.log(response.data);
     })
-    .catch(function (error) {
-      console.log(error);
+    .catch((error) => {
+      console.log('error:', error.response.data);
+      return {
+        "Dolares": [{
+          "Valor": "-",
+          "Fecha": `${yyyy}-${mm}-${dd}`
+        }]
+      };
     });
 };
 
